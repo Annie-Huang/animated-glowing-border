@@ -51,4 +51,5 @@ body {
   fill: transparent;
   stroke: black;
   stroke-width: 5px;
+  stroke-dasharray: 20px 20px;
 }
