@@ -41,7 +41,7 @@ body {
   inset: 0;
   width: 100%;
   height: 100%;
-  outline: 3px solid black;
+  /*outline: 30px solid black;*/
 }
 
 .glow-blur,
@@ -49,4 +49,6 @@ body {
   width: 100%;
   height: 100%;
   fill: transparent;
+  stroke: black;
+  stroke-width: 5px;
 }
