@@ -19,3 +19,15 @@ body {
   );
   font-family: system-ui;
 }
+
+.button {
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: inherit;
+  font-weight: 700;
+  color: hsl(320, 40%, 40%);
+  background-color: hsl(349 100% 95%);
+  padding: 0.75em 1.25em;
+  border: 0;
+  border-radius: 1.25rem;
+}
