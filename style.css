@@ -51,6 +51,9 @@ body {
   /* because the width in .glow-container increase, we need to shrink back into the button size */
   width: calc(100% - var(--container-offset));
   height: calc(100% - var(--container-offset));
+  /* put into the correct position so now we can see the grow in the overflow outside the stroke as well */
+  x: calc(var(--container-offset) / 2);
+  y: calc(var(--container-offset) / 2);
 
   rx: 1.25rem; /* to the same as border-radius in .button */
   fill: transparent;
