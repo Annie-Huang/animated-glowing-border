@@ -63,3 +63,8 @@ body {
   /* stroke-dashoffset is how far does it move, negative number will make it move clock wise */
   stroke-dashoffset: -65px;
 }
+
+.glow-blur {
+  /* Add the blur but you can only see the blur in the inner part, not the overflow part. */
+  filter: blur(5px);
+}
