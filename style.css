@@ -54,11 +54,11 @@ body {
   /*stroke-dasharray: 50px 50px;*/
   stroke-dasharray: 20px 30px;
 
-  transition: stroke-dashoffset 500ms;
+  transition: stroke-dashoffset 2000ms;
 }
 
 .glow-effect:hover .glow-blur,
 .glow-effect:hover .glow-line {
-  /* stroke-dashoffset is how far does it move */
-  stroke-dashoffset: 20px;
+  /* stroke-dashoffset is how far does it move, negative number will make it move clock wise */
+  stroke-dashoffset: -65px;
 }
