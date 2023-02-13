@@ -33,14 +33,16 @@ body {
 }
 
 .glow-effect {
+  /* do not change, used for calculations */
+  --container-offset: 100px;
   position: relative;
 }
 
 .glow-container {
   position: absolute;
-  inset: 0;
-  width: calc(100% + 100px);
-  height: calc(100% + 100px);
+  inset: calc(var(--container-offset) / -2);
+  width: calc(100% + var(--container-offset));
+  height: calc(100% + var(--container-offset));
   outline: 3px solid blue;
 }
 
