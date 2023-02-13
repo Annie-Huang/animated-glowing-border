@@ -39,6 +39,7 @@ body {
 }
 
 .glow-container {
+  pointer-events: none; /* we only want the hover effect trigger in the button area, not the container area (since now we increase the container size) */
   position: absolute;
   inset: calc(var(--container-offset) / -2);
   width: calc(100% + var(--container-offset));
