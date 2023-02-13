@@ -53,4 +53,12 @@ body {
   stroke-width: 5px;
   /*stroke-dasharray: 50px 50px;*/
   stroke-dasharray: 20px 30px;
+
+  transition: stroke-dashoffset 500ms;
+}
+
+.glow-effect:hover .glow-blur,
+.glow-effect:hover .glow-line {
+  /* stroke-dashoffset is how far does it move */
+  stroke-dashoffset: 20px;
 }
