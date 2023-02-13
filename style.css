@@ -48,6 +48,7 @@ body {
 .glow-line {
   width: 100%;
   height: 100%;
+  rx: 1.25rem; /* to the same as border-radius in .button */
   fill: transparent;
   stroke: black;
   stroke-width: 5px;
