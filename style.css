@@ -48,8 +48,10 @@ body {
 
 .glow-blur,
 .glow-line {
-  width: 100%;
-  height: 100%;
+  /* because the width in .glow-container increase, we need to shrink back into the button size */
+  width: calc(100% - var(--container-offset));
+  height: calc(100% - var(--container-offset));
+
   rx: 1.25rem; /* to the same as border-radius in .button */
   fill: transparent;
   stroke: black;
