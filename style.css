@@ -33,6 +33,8 @@ body {
 }
 
 .glow-effect {
+  --glow-line-clor: #fff;
+  --glow-line-thickness: 2px;
   /* do not change, used for calculations */
   --container-offset: 100px;
   position: relative;
@@ -75,4 +77,9 @@ body {
 .glow-blur {
   /* Add the blur but you can only see the blur in the inner part, not the overflow part. */
   filter: blur(5px);
+}
+
+.glow-line {
+  stroke: var(--glow-line-clor);
+  stroke-width: var(--glow-line-thickness);
 }
