@@ -71,12 +71,6 @@ body {
   transition: stroke-dashoffset 2000ms;
 }
 
-.glow-effect:hover .glow-blur,
-.glow-effect:hover .glow-line {
-  /* stroke-dashoffset is how far does it move, negative number will make it move clock wise */
-  stroke-dashoffset: -65px;
-}
-
 .glow-blur {
   /* Add the blur but you can only see the blur in the inner part, not the overflow part. */
   filter: blur(var(--glow-blur-size));
@@ -87,6 +81,12 @@ body {
 .glow-line {
   stroke: var(--glow-line-color);
   stroke-width: var(--glow-line-thickness);
+}
+
+.glow-effect:hover .glow-blur,
+.glow-effect:hover .glow-line {
+  /* stroke-dashoffset is how far does it move, negative number will make it move clock wise */
+  stroke-dashoffset: -65px;
 }
 
 /* Do it to .glow-container so the you don't need to target opacity in individual <rect> */
