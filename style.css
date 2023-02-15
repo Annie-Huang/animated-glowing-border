@@ -68,7 +68,7 @@ body {
   /*stroke-dasharray: 50px 50px;*/
   stroke-dasharray: 20px 30px;
 
-  transition: stroke-dashoffset 2000ms;
+  /*transition: stroke-dashoffset 2000ms; Don't do two ways transition*/
 }
 
 .glow-blur {
@@ -88,6 +88,7 @@ body {
 .glow-effect:is(:hover, :focus) :is(.glow-line, .glow-blur) {
   /* stroke-dashoffset is how far does it move, negative number will make it move clock wise */
   stroke-dashoffset: -65px;
+  transition: stroke-dashoffset 2000ms;
 }
 
 /* Do it to .glow-container so the you don't need to target opacity in individual <rect> */
