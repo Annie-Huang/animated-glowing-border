@@ -83,8 +83,9 @@ body {
   stroke-width: var(--glow-line-thickness);
 }
 
-.glow-effect:hover .glow-blur,
-.glow-effect:hover .glow-line {
+/*.glow-effect:hover .glow-blur,*/
+/*.glow-effect:hover .glow-line {*/
+.glow-effect:is(:hover, :focus) :is(.glow-line, .glow-blur) {
   /* stroke-dashoffset is how far does it move, negative number will make it move clock wise */
   stroke-dashoffset: -65px;
 }
