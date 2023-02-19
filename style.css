@@ -66,7 +66,7 @@ body {
   y: calc((var(--container-offset) / 2) + calc(var(--glow-offset) / -2));
 
   /* to the same as border-radius in .button */
-  /* Do it in javascript instead*/
+  /* Control it through javascript instead */
   /*rx: 1.25rem;*/
 
   fill: transparent;
