@@ -108,3 +108,8 @@ body {
     opacity: 1;
   }
 }
+
+/* Make the whole thing glow on hover. */
+.glow-effect[data-glow-animation='false'] {
+  --glow-line-length: 50px;
+}
