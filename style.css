@@ -38,7 +38,7 @@ body {
   --glow-line-length: 20px;
   --glow-blur-color: #fff;
   --glow-blur-size: 10px;
-  --glow-offset: 20px;
+  --glow-offset: 0px;
   --animation-speed: 1200ms;
   /* do not change, used for calculations */
   --container-offset: 100px;
@@ -114,4 +114,8 @@ body {
 /* Make the whole thing glow on hover. */
 .glow-effect[data-glow-animation='false'] {
   --glow-line-length: 50px;
+}
+
+.glow-effect[data-glow-offset='true'] {
+  --glow-offset: 10px;
 }
