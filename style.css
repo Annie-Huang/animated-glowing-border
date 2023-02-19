@@ -35,6 +35,7 @@ body {
 .glow-effect {
   --glow-line-color: #fff;
   --glow-line-thickness: 2px;
+  --glow-line-length: 20px;
   --glow-blur-color: #fff;
   --glow-blur-size: 10px;
   --animation-speed: 1200ms;
@@ -67,7 +68,7 @@ body {
   /*stroke: black;*/
   /*stroke-width: 5px;*/
   /*stroke-dasharray: 50px 50px;*/
-  stroke-dasharray: 20px 30px;
+  stroke-dasharray: var(--glow-line-length) calc(50px - var(--glow-line-length));
 
   /*transition: stroke-dashoffset 2000ms; Don't do two ways transition*/
 }
